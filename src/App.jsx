@@ -11,6 +11,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import Home from './Pages/Home';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Produtos from './Pages/Produtos';
 
 
 
@@ -26,9 +27,11 @@ const App = () => {
   return (
     <div>
       <Navbar  />
+      <hr className='w-4/5 mx-auto'/>
       <ToastContainer />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/produtos' element={<Produtos />} />
       </Routes>
       <Footer />
     </div>
